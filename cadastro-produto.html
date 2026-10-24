@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Cadastro de Produto</title></head>
+<body>
+  <img src="midias/logo.mercado.png" alt="Logo" width="180">
+<h1>Cadastro de Produtos</h1>
+<hr>
+  <a href="index.html">Início</a>
+<br><br>
+<form action="#" method="get">
+  <p><label for="nome">Nome do produto:</label><br><input type="text" id="nome" name="nome" required></p>
+  <p><label for="preco">Preço (R$):</label><br><input type="number" id="preco" name="preco" min="0" step="0.01" required></p>
+  <p><label for="quantidade">Quantidade em estoque:</label><br><input type="number" id="quantidade" name="quantidade" min="0"></p>
+  <p><label for="validade">Data de validade:</label><br><input type="date" id="validade" name="validade"></p>
+  <p>Disponibilidade:</p>
+  <input type="radio" id="disponivel" name="disponibilidade" value="Disponível" checked><label for="disponivel">Disponível</label><br>
+  <input type="radio" id="indisponivel" name="disponibilidade" value="Indisponível"><label for="indisponivel">Indisponível</label>
+  <p><label for="descricao">Descrição do produto:</label><br><textarea id="descricao" name="descricao" rows="5" cols="40"></textarea></p>
+  <p><label for="video">Nome do arquivo de vídeo:</label><br><input type="text" id="video" name="video" placeholder="Ex.: produto.mp4"></p>
+  <p><label for="audio">Nome do arquivo de áudio:</label><br><input type="text" id="audio" name="audio" placeholder="Ex.: produto.mp3"></p>
+  <p><button type="submit">Enviar cadastro</button> <button type="reset">Limpar formulário</button></p>
+</form>
+</body></html>
